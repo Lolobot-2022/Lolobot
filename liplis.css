@@ -1,0 +1,204 @@
+/* Embed google fonts for demo layout
+-----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+  
+
+
+.titre {
+  font-family:'Chalkduster, fantasy';
+  font-size: 1.70rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: #ff0932;
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+}
+
+
+.date {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  color: hsl(177, 83%, 42%);
+  font-size: 1rem;
+  word-spacing: 10px;
+}
+
+.datesource {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid hsl(177, 80%, 52%);
+  background-color: #28cec0;
+  border-radius: 5px 5px 5px 5px;
+  padding: 2px 5px 2px 5px;
+  word-spacing: 10px;
+  text-align: left;
+  }
+  
+.nimewo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid hsl(177, 80%, 52%);
+  background-color: #28cec0;
+  border-radius: 5px 5px 5px 5px;
+  padding: 2px 5px 2px 5px;
+  word-spacing: 10px;
+  text-align: left;
+  }
+
+.liplis {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height:0.5rem;
+  position:relative;
+  font-weight: bold;
+  border: 15px solid hsl(177, 80%, 52%);
+  background-color: #28cec0;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2px 5px 2px 5px;
+  text-decoration:none;
+  
+ 
+  }
+
+.bak {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height:0.5rem;
+  position:relative;
+  font-weight: bold;
+  border: 15px solid hsl(177, 80%, 52%);
+  background-color: #28cec0;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2px 5px 2px 5px;
+  text-decoration:none;
+  text-align:right;
+
+  }
+ 
+.saison {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: left;
+      color: rgb(2, 250, 250);
+      text-decoration:none;
+        }  
+.container {
+      border: solid 2px rgb(3, 3, 3);
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+     }  
+  
+.box {
+     display:flex;
+     flex-direction:column;
+     padding: 0px;
+     margin: 0px;
+     color:black;
+     align-items: center;
+   }
+.item {
+      border: solid 2px rgb(17, 237, 245);
+      margin: 0px;
+      text-align: left;
+      color: white;
+      text-indent: 15px;
+      font-weight: bold;
+      font-size: large;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      justify-items: center;
+     }  
+                                             
+
+body {
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  align-items: center;
+
+
+  }
+
+  .button:hover {
+      background: rgb(185, 166, 166);
+      color: rgb(30, 78, 141);
+      }
+
+  .overlay {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.7);
+    transition: opacity .4s;
+    visibility:hidden;
+    opacity: 0;
+        }
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+
+      } 
+     
+  .popup {
+    margin: 6rem auto;
+    padding: 2rem;
+    background: black;
+    border-radius: 30px;
+    border: 5px solid #28cec0;
+    width: 78%;
+    height: 80%;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    overflow-y: scroll;
+    
+  } 
+  
+ .popup .cross {
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: rgb(17, 16, 16);
+  border:1px solid #28cec0;
+  border-radius: 100px 100px 100px 100px;
+  background-color: #28cec0;
+
+} 
+
+.popup .cross:hover {
+  color: rgb(241, 13, 44);
+
+} 
+ 
+iframe {
+  border: 10px solid hsl(177, 80%, 52%);
+  background-color: #070707;
+  border-radius: 35px 35px 35px 35px;
+
+} 
+ 
+.videos {
+  border: 1px solid hsl(180, 4%, 5%);
+  width: 280px;
+  height: 280px;
+  float: left;
+  border-radius: 0 0 0 0;
+
+} 
+  
+.second {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  text-align: left;
+  color: white;
+  clear: left;
+      }
+  

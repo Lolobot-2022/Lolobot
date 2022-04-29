@@ -1,0 +1,179 @@
+/* Embed google fonts for demo layout
+-----------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2? famille=Luckiest+Guy&display=swap");
+
+@import url("https://fonts.googleapis.com/css2? family=Luckiest+Guy&family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Luckiest+Guy&family=Palette+Mosaic&family=Playfair+Display:ital@1&family=Yanone+Kaffeesatz&display=swap");
+
+body {
+  background-color: black;
+  transition: .5s;
+}
+
+ .retour {
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px;
+} 
+
+svg{
+  width: 20px;
+  height: 50px;
+} 
+
+h1{
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* .photo {
+  margin: 70px 30px auto 30px;
+}
+
+.video {
+  margin: 70px 30px auto 30px;
+} */
+
+.grid-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(5,1fr);
+  background-color: black;
+  height: 200px;
+  width: 800px;
+  margin: 50px auto;
+  gap: 0;
+  cursor: pointer;
+  justify-items: center;
+}
+
+.grid-container1 {
+  display: grid;
+  position: relative;
+  grid-template-columns:repeat(5,1fr) ;
+  background-color: black;
+  border-radius: 10px;
+  height: 300px;
+  width: 800px;
+  margin: 50px auto;
+  gap: 5px;
+  cursor: pointer;
+  justify-items: center;
+}
+
+
+.grid-item {
+  margin-left: 0;
+  padding: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  /* border-radius: 0 20px 0 15px; */
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.7);
+  transition: opacity 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 6rem auto;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    black,
+    rgb(65, 44, 44),
+    rgb(147, 53, 53)
+  );
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+
+.popup .cross {
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.popup .cross:hover {
+  color: rgb(0, 0, 0);
+}
+
+.popupvid {
+  margin: 0rem auto;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    black,
+    rgb(65, 44, 44),
+    rgb(147, 53, 53)
+  );
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+
+.popupvid .cross {
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.popupvid .cross:hover {
+  color: rgb(0, 0, 0);
+}
+
+.grid-cont {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  width: 900px;
+  height: 500px;
+  border: none;
+  margin: 0 0 0 500px;
+}
