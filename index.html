@@ -63,7 +63,7 @@
     <!--La class grid-container contient tous les informations sur le film ou la serie,
    comme son nom, son resume, un bouton regarder et un autre pour plus d'infos -->
   <div>
-    <div class="grid-container">
+   <div class="grid-container">
       <div class="grid-item">
         <p translate="no" class="grantit" title="tit">VAKANS</p> 
         <!-- <img class="grantit" src="./media/freda1.png" alt="" /> -->
@@ -79,7 +79,15 @@
         </p>
       </div>
 
-      <div class="grid-item">
+      <div class="item1">
+        <span translate="no" class="rezimtit-mobile">Komedi</span>
+        <span translate="no" class="rezimtit-mobile">Plezi</span>
+        <span translate="no" class="rezimtit-mobile">Jenès</span>
+        <span translate="no" class="rezimtit-mobile">Vakans</span>
+
+      </div>
+
+      <div class="item2">
         <a
           class="lekti"
           href="https://www.allocine.fr/film/fichefilm_gen_cfilm=293309.html"
@@ -101,7 +109,7 @@
           </button>
         </a>
 
-        <a class="lekti" href="#popup" class="image">
+        <a href="#popup" class="image">
           <button
             onclick="pauseVid()"
             type="button"
@@ -138,16 +146,14 @@
         </div>
       </div>
     </div>
-    <!--Cette class contient la video d'arriere plan sur laquelle se trouve les informations du grid-container.
-  il y a une fonction js qui permet de play la video quand la souris se trouve dessus, une fois celle-ci a
-ete en pause-->
+  
     <div class="imgCont">
       <video
         onmouseover="playVid()"
         id="img"
         class="img"
-        poster="./media/vakans-poster.png"
-        src="../media/fim/vakans.mp4"
+        poster="./media/fim/vakans-poster.png"
+        src="./media/fim//vakans.mp4"
         title="title"
         autoplay="0"
         loop
@@ -155,7 +161,7 @@ ete en pause-->
     </div>
   </div>
 
-  
+
     <div class="after-vidPrincipale">
       <h1 class="titre">Fim ki fèk parèt</h1>
       <div class="card-container">
