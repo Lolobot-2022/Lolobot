@@ -8,6 +8,8 @@ const btn = document.querySelector('.btn-svg8');
 
 
 
+
+
 //pour retarder le lancement de la video principale de 100s
 setTimeout(function() {
   document.getElementById("img")
@@ -71,3 +73,5 @@ btn.addEventListener('click', () => {
   })
 
 })
+
+
