@@ -26,7 +26,7 @@
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link href="./splide.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
@@ -69,7 +69,7 @@
         <!-- <img class="grantit" src="./media/freda1.png" alt="" /> -->
       </div>
 
-      <div class="grid-item">
+      <div class="grid-item1">
         <p class="rezimetit" title="rezim">
           Twa frè, Pol, Fabris ak Michèl ki al 
           pase vakans Sen Domeng. <br>
@@ -81,7 +81,7 @@
 
       <div class="item1">
         <span translate="no" class="rezimtit-mobile">Komedi</span>
-        <span translate="no" class="rezimtit-mobile">Plezi</span>
+        <span translate="no" class="rezimtit-mobile">Bèl Plezi</span>
         <span translate="no" class="rezimtit-mobile">Jenès</span>
         <span translate="no" class="rezimtit-mobile">Vakans</span>
 
@@ -123,7 +123,7 @@
                 d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
               />
             </svg>
-            <span class="btn-info">Plis enfo</span> 
+            <span class="btn-info1">Plis enfo</span> 
           </button>
         </a>
 
@@ -162,25 +162,426 @@
   </div>
 
 
+  <div class="after-vidPrincipale">
+    <h1 class="titre">Fim ki fèk parèt</h1>
+    <div class="card-container">
+    
+      <div onmouseover="loadVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+             <a href="./anim.html"><video
+                id="img"
+                class="videoplay"
+                poster="./media/freda-affiche2.png"
+                src="./media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video></a>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
 
-  <div class="splide" role="group" aria-label="Splide Basic HTML Example"></div>
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide"><img src="./media/fim/vakans-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/freda-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/vakans-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/vakans-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/freda-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/vakans-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/vakans-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/freda-poster.png" alt=""></li>
-        <li class="splide__slide"><img src="./media/fim/vakans-poster.png" alt=""></li>
-      </ul>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$4.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/vakans-affiche.png"
+                src="../media/fim/vakans.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/seoul.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+      </div>
+    </div>
+   </div>
+ </div>
+  <br>
+
+  <div class="after1">
+    <h1 class="titre">Seri ki fèk parèt</h1>
+    <div class="card-container">
+      <!-- <span class="horizontal-scroll">&#139;</span>
+      <span class="horizontal-scroll">&#155;</span> -->
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/freda-affiche2.png"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">  
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$4.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/vakans-affiche.png"
+                src="../media/fim/vakans.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/seoul.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="after2">
+    <h1 class="titre">Dokimantè</h1>
+    <div class="card-container">
+      <!-- <span class="horizontal-scroll">&#139;</span>
+      <span class="horizontal-scroll">&#155;</span> -->
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/freda-affiche2.png"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+           
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/vakans-affiche.png"
+                src="../media/fim/vakans.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$2.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/seoul.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a href="" class="btn-default"><i class="bi bi-play-btn-fill"></i><samp>$3.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$1.00</samp></a>
+          </div>
+        </div>
+      </div>
+
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$4.00</samp></a>
+          </div>
+        </div>
+      </div>
+      
+      <div onmouseover="pauseVid()" class="listing-card">
+        <div class="imageVideo">
+          <div class="image">
+            <div class="video">
+              <video
+                id="img"
+                class="videoplay"
+                poster="./media/OIP.jpeg"
+                src="../media/fim/freda.mp4"
+                title="title"
+                type="video/mp4"
+                preload="none"
+                loop="1"
+              ></video>
+            </div>
+          </div>
+          <div class="details">
+            <a class="btn-default" href=""><i class="bi bi-play-btn-fill"></i><samp>$4.00</samp></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  
-    
 
   <!--Pour la publicite-->
     <div class="patne-container">
@@ -210,7 +611,7 @@
 
     <script src="./assets/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/bootstrap.js" type="text/javascript"></script>
-    <script src="./splide.min.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -218,15 +619,7 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-      var splide = new Splide( '.splide', {
-      type   : 'loop',
-      perPage: 3,
-      perMove: 1,
-     });
-  
-      splide.mount();
-     </script>
+    
   </body>
 
   <footer>
