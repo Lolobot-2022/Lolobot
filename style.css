@@ -520,6 +520,7 @@ h3 {
   cursor: pointer;
   box-shadow: 0px 0px 8px rgb(218, 218, 218);
   overflow: hidden;
+  z-index: 3;
   
   animation: fade ease 5s; 
   animation-duration: 5s;
@@ -631,7 +632,7 @@ h3 {
   margin-left: 70px;
 }
 
-samp {
+h3 {
   color: rgb(113, 255, 12);
   font-weight: bold;
   font-size: medium;
@@ -644,23 +645,42 @@ samp {
   display: none;
 }
 
+.shadow{
+  display: none;
+}
+
 
 @media only screen and (max-width: 767px) {
+  .scrolled{
+    box-shadow: 0px 0px 8px rgb(247, 14, 14);
+  }
+  
   .img {
     position: relative;
     width: 100%;
     height: 100%;
     cursor: pointer;
     object-fit: cover;
-    filter: brightness(120%);
-    opacity: 0.6;
+    filter: brightness(110%);
     box-shadow: none;
+    height: 600px;
   }
 
   .imgCont{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
     box-shadow: 0px 55px 50px rgb(0, 0, 0);
-    height: 500px;
+    height: 600px;
+  }
+
+  .shadow{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.952), rgb(0, 0, 0));
+    box-shadow: 0px 55px 50px rgb(0, 0, 0);
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    cursor: pointer;
   }
 
   nav .destop-list {
@@ -670,7 +690,7 @@ samp {
   
   .mobile-list{
     background-color: #000000; 
-    box-shadow: 0px 0px 4px rgb(218, 218, 218);
+    box-shadow: 0px 0px 8px rgb(218, 218, 218);
     filter: brightness(120%);
     display: block;
     color:#959393;
@@ -742,15 +762,15 @@ samp {
 
   .grid-container {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: grid;
     grid-template-rows: 30px 30px 30px;
     row-gap: 5px;
     height: 130px;
-    width: 60%;
-    top:390px;
+    width: 70%;
+    top:400px;
     justify-content: center;
-    margin: 0 50px;
+    margin: auto;
     opacity: 1.0;
   } 
 
@@ -778,7 +798,7 @@ samp {
   }
 
   .grantit {
-    font-size: 50px; 
+    font-size: 40px; 
     animation-name: none;
     animation-delay: none;
     animation-direction: none;
@@ -795,7 +815,7 @@ samp {
     display: inline-flex;
     width: 100%;
     height: 20px;
-    margin-top: 35px;
+    margin-top: 20px;
     justify-content: center;
   }
 
@@ -803,14 +823,14 @@ samp {
     display: inline-flex;
     width: 100%;
     height: 35px;
-    margin-top: 22px;
+    margin-top: 5px;
     justify-content: center;
     
   }
 
   .rezimtit-mobile {
     display: inline-flex;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bold;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     color:#ff0000;
@@ -826,16 +846,14 @@ samp {
   .btn-info{
     font-size: 13px;
     font-weight: bold;
-    padding: 7px 7px 7px 1px;
     font-family: Georgia, "Times New Roman", Times, serif;
     background-color: #ffffff00;
     color: #000000;
   }
 
   .btn-info1{
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
-    padding: 7px 7px 7px 1px;
     font-family: Georgia, "Times New Roman", Times, serif;
     background-color: #ffffff00;
     color: rgb(255, 255, 255);
@@ -843,27 +861,26 @@ samp {
 
   .btn-info:hover{
     background-color: #ffffff00;
-    font-size:12.5px;
+    font-size:10.5px;
     }
 
   .btn-info1:hover{
       background-color: #ffffff00;
-      font-size:12.5px;
+      font-size:11.5px;
       }
 
   #btn {
     border: solid 2px white;
     cursor: pointer;
-    width: 140px;
+    width: 110px;
     height: 35px;
     
   }
 
   #btn1 {
     border-radius: 5px 5px 5px 5px;
-    padding: 0 20px 5px 15px;
     cursor: pointer;
-    width: 140px;
+    width: 110px;
     height: 35px;
   }
 
@@ -916,7 +933,7 @@ samp {
   
   
    .after-vidPrincipale{
-    margin-top: 80px;
+    margin-top: 0px;
   }
   
 
@@ -930,17 +947,19 @@ samp {
     gap: 50px 1px;
     justify-items: stretch;
     top: 10px;
+    border-radius: 0;
   }
   
   .listing-card {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
     border-radius: 5px;
-    margin-right: 5px;
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 253px;
     transition: 0.5s ease-in-out;
+    box-shadow: 0px 55px 50px rgb(0, 0, 0);
+
   }
   
   .listing-card .video {
@@ -952,7 +971,7 @@ samp {
     height:100%;
     width:100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 0;
     box-sizing: border-box;
   }
   
@@ -967,18 +986,32 @@ samp {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 13px;
+   
   }
+
+ 
   
   .listing-card .btn-default {
     background: white;
-    color: #fff;
-    width: 90px;
-    height: 30px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 25px;
     text-decoration: none;
-    margin-top:20px;
-    margin-left: 0;
-    border-radius: 0;
+    margin-left: auto;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 13px;
   }
+
+  
+  
+  .listing-card .btn-default:hover {
+    background: rgb(203, 35, 35);
+    width: 78px;
+    font-size: 13px;
+  }
+
+
   
   .titre {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -986,14 +1019,18 @@ samp {
     font-size: 25px;
     color:#e5e5e5;
     text-align: left;
+    margin-left: 15px;
   }
   
-  samp {
-    color: rgb(0, 0, 0);
+  h3 {
+    color: rgb(103, 57, 57);
     font-weight: bold;
-    font-size:small;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size:13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    margin-top:5px;
   }
-  
-}
+  h1{
+    font-size: 20px;
+  }
+ }
