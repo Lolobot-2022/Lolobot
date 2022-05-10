@@ -27,6 +27,9 @@ function myFunction() {
 }
 
 
+
+
+
 //pour mettre en pause les differentes videos 
 function pauseVid() { 
   vid.pause(); 
