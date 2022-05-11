@@ -30,7 +30,7 @@ function myFunction() {
 
 
 
-//pour mettre en pause les differentes videos 
+//pour mettre en pause la principale video
 function pauseVid() { 
   vid.pause(); 
 } 
@@ -42,7 +42,15 @@ function playVid() {
 
 
 
-//pour mettre en pause la video principale concernant
+
+function mutedVid() {
+  vid.muted();
+}
+
+
+
+
+//pour mettre en pause les autres videos
 function pauseVideo() { 
   video.pause(); 
 } 
@@ -52,6 +60,7 @@ function pauseVideo() {
 function pauseVid1() {
     vid1.pause();
   } 
+
 
 
 //pour arreter les videos avec la souris
