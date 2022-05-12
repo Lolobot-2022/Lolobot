@@ -88,8 +88,9 @@
       </div>
 
       <div class="item2">
-       
-        <i onclick="mutedVid()" id="mute" class="bi bi-mic-mute-fill"></i>
+        
+        <i onclick="pauseVid()" id="mute" class="bi bi-pause-fill"></i>
+      
        
         <a
           class="lekti"
@@ -112,7 +113,20 @@
           </button>
         </a>
 
-        <i  onclick="pauseVid()" id="info-vidprincipal" class="bi bi-plus"></i>
+        
+        <a href="#popup-info-plus" class="info-plus">
+          <i  onclick="pauseVid()" id="info-vidprincipal" class="bi bi-plus"></i>
+        </a>
+
+        <div id="popup-info-plus" class="overlay-info-plus">
+          <div class="popup">
+          
+            <button onclick="pauseVideo();playVid()" type="button" id="button-info-plus">
+              <a href="#" class="-info-plus">&times;</a>
+            </button>
+          </div>
+        </div>
+        
 
         <a href="#popup" class="image">
           <button
@@ -155,7 +169,7 @@
 
     </div>
 
-        <div class="shadow" onmouseover="playVid()"></div>
+        <div class="shadow" onclick="playVid()"></div>
   
     <div class="imgCont">
       <video
@@ -165,8 +179,9 @@
         poster="./media/fim/vakans-poster.png"
         src="./media/fim//vakans.mp4"
         title="title"
-        autoplay="0"
         loop
+        autoplay="0"
+        type="video/mp4"
       ></video>
     </div>
   </div>
