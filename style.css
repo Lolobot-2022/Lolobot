@@ -939,13 +939,19 @@ h3 {
   }
 
   .rezimtit-mobile {
-    display:inline-flex;
+    display:list-item;
     font-size: 10px;
     font-weight: bold;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     color:#ff0000;
     padding: 0px 10px 0px 10px;
   } 
+
+  ::marker{
+    color: white;
+    font-size: 10px;
+
+  }
 
   
   svg {
@@ -961,7 +967,11 @@ h3 {
   }
 
   #mute:active{
-    font-size: 18px;
+    color: rgb(255, 0, 0);
+  }
+
+  .muted{
+    color: rgb(255, 0, 0);
   }
 
   #info-vidprincipal{
@@ -972,7 +982,7 @@ h3 {
   }
 
   #info-vidprincipal:active{
-    font-size: 18px;
+    color: rgb(40, 147, 230);
   }
 
 

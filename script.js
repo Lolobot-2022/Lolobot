@@ -2,7 +2,6 @@
 window.onscroll = function() {myFunction()};
 const vid = document.getElementById("img"); 
 const video = document.getElementById("vid1popup"); 
-const vid1= document.getElementById("img");
 let myvideo = document.querySelectorAll(".videoplay");
 const btn = document.querySelector('.btn-svg8');
 
@@ -42,7 +41,6 @@ function playVid() {
 
 
 
-
 //pour mettre en pause les autres videos
 function pauseVideo() { 
   video.pause(); 
@@ -50,9 +48,16 @@ function pauseVideo() {
 
 
 
-function pauseVid1() {
-    vid1.pause();
-  } 
+//Pour arreter ou jouer le son du film principal
+mute.onclick = function (){
+if (vid.muted === false) {    
+  vid.muted = true;
+}
+else {
+  vid.muted = false;
+}
+  }
+
 
 
 
@@ -78,6 +83,8 @@ btn.addEventListener('click', () => {
   })
 
 })
+
+
 
 
 
