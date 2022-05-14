@@ -1,6 +1,7 @@
 
 window.onscroll = function() {myFunction()};
 const vid = document.getElementById("img"); 
+const vidDesktop = document.getElementById("img-desktop"); 
 const video = document.getElementById("vid1popup"); 
 let myvideo = document.querySelectorAll(".videoplay");
 const btn = document.querySelector('.btn-svg8');
@@ -38,6 +39,14 @@ function playVid() {
 } 
 
 
+function pausevidDesktop() { 
+  vidDesktop.pause(); 
+} 
+
+function playvidDesktop() { 
+  vidDesktop.play(); 
+} 
+
 
 
 
@@ -50,14 +59,25 @@ function pauseVideo() {
 
 //Pour arreter ou jouer le son du film principal
 mute.onclick = function (){
-if (vid.muted === false) {    
-  vid.muted = true;
+if (vid.muted === true) {    
+  vid.muted = false;
 }
 else {
-  vid.muted = false;
+  vid.muted = true;
 }
   }
 
+
+
+svg7.onclick = function (){
+if (vidDesktop.muted === false) {    
+  vidDesktop.muted = true;
+}
+else {
+  vidDesktop.muted = false;
+    }
+ }
+  
 
 
 

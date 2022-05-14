@@ -117,9 +117,15 @@ html, body {
   margin: 0;
   padding: 0;
   filter: brightness(220px);
+  width: 100%;
 }
 
-.img {
+.imgCont-desktop{
+  display: block;
+}
+
+.img-desktop {
+  display: flex;
   position: static;
   width: 100%;
   height: 100vh;
@@ -131,6 +137,14 @@ html, body {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
   box-shadow: 0px 0px 8px rgb(218, 218, 218);
   cursor: pointer;
+}
+
+.img{
+  display: none;
+}
+
+.imgCont{
+  display: none;
 }
 
 .vid1popup {
@@ -223,6 +237,7 @@ animation-iteration-count: 1;
 }
 
 .lekti{
+  text-decoration: none;
   animation-name: montee;
   animation-delay: 10s;
   animation-direction: normal;
@@ -272,11 +287,25 @@ animation-iteration-count: 1;
   font-weight: bold;
   padding: 7px 7px 7px 1px;
   color: #000000;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #ffffff00;
 }
 
 .btn-info:hover{
+background-color: #ffffff00;
+font-size:14.5px;
+}
+
+.btn-info1{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 7px 7px 1px;
+  color: #000000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #ffffff00;
+}
+
+.btn-info1:hover{
 background-color: #ffffff00;
 font-size:14.5px;
 }
@@ -344,6 +373,8 @@ svg {
   background-color: white;
   border: solid 2px white;
   cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
   width: 180px;
   height: 45px;
 }
@@ -352,7 +383,11 @@ svg {
   border-radius: 3px 3px 3px 3px;
   background-color: rgba(148, 147, 147, 0.325);
   border: solid 2px rgba(255, 255, 255, 0.325);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+  font-size: 15px;
   margin-left: 10px;
   width: 180px;
   height: 45px;
@@ -527,6 +562,26 @@ h3 {
 }
 
 .btn-svg8{
+  display: none;
+ }
+
+#mute{
+  display: none;
+}
+
+#info-vidprincipal{
+  display: none;
+}
+
+#svg7 {
+  color: rgb(255, 0, 0);
+  margin: 50px;
+  font-size: 25px;
+  
+}
+
+.btn-svg8-unmute{
+  display: block;
   height: 50px;
   width: 50px;
   background-color: rgb(0, 0, 0);
@@ -557,19 +612,6 @@ h3 {
  } 
 } 
 
-#mute{
-  display: none;
-}
-
-#info-vidprincipal{
-  display: none;
-}
-
-.svg8 {
-  height: 35px; 
-  width: 90px;
-  color: rgb(255, 0, 0);
-}
 
 
 /* .after-vidPrincipale{
@@ -710,7 +752,13 @@ h3 {
   #head{
     z-index: 3;
   }
+  .imgCont-desktop{
+    display: none;
+  }
 
+  .img-desktop{
+    display: none;
+  }
   
   .img {
     position: relative;
@@ -725,6 +773,7 @@ h3 {
   }
 
   .imgCont{
+    display: block;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
     box-shadow: 0px 55px 50px rgb(0, 0, 0);
     height: 610px;
@@ -878,11 +927,11 @@ h3 {
     position: absolute;
     z-index: 2;
     display: grid;
-    grid-template-rows: 55px 33px 30px;
+    grid-template-rows: 75px 33px 30px;
     row-gap: 5px;
     height: 130px;
     width: 70%;
-    top:460px;
+    top:430px;
     justify-content: center;
     margin: auto;
     opacity: 1.0;
@@ -912,8 +961,8 @@ h3 {
   }
 
   .grantit {
-    width:120px;
-    height: 100px;
+    width:200px;
+    height: 140px;
     animation-name: none;
     animation-delay: none;
     animation-direction: none;
@@ -967,7 +1016,7 @@ h3 {
   #mute{
     display: block;
     color: rgb(255, 255, 255);
-    margin: 5px;
+    margin: 5px 20px 5px 0;
     cursor: pointer;
   }
 
@@ -978,7 +1027,7 @@ h3 {
   #info-vidprincipal{
     display: block;
     color: rgb(255, 255, 255);
-    margin: 5px;
+    margin: 5px 0 5px 20px;
     cursor: pointer;
   }
 
@@ -1053,14 +1102,48 @@ h3 {
  }
 
  .btn-svg8{
-  height: 45px;
-  width: 45px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
   bottom: 100px;
-  }
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgb(218, 218, 218);
+  overflow: hidden;
+  z-index: 3;
+  
+  animation: fade ease 5s; 
+  animation-duration: 5s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite; 
+} 
+
+ @keyframes fade { 
+ 0% { 
+ opacity: 0; 
+ } 
+ 100% { 
+ opacity: 1; 
+ } 
+} 
+
+#svg7{
+  display: none;
+}
 
  .svg8 {
-  height: 30px; 
-  width: 90px;
+  height: 25px; 
+  width: 80px;
+  color: red;
+ }
+
+ .btn-svg8-unmute{
+   display: none;
  }
 
 
@@ -1078,13 +1161,12 @@ h3 {
     display: grid;
     margin-left: 5px;
     margin-right: 5px;
-    grid-template: repeat(8, auto)/ repeat(1,auto);
+    grid-template: repeat(2, auto)/ repeat(4,auto);
     position: relative;
     overflow: hidden;
-    gap: 50px 1px;
+    gap: 20px 5px;
     justify-items: stretch;
     top: 10px;
-    border-radius: 0;
   }
   
   .listing-card {
@@ -1093,22 +1175,22 @@ h3 {
     border-radius: 5px;
     position: relative;
     width: 100%;
-    height: 253px;
+    height: 150px;
     transition: 0.5s ease-in-out;
     box-shadow: 0px 55px 50px rgb(0, 0, 0);
 
   }
   
   .listing-card .video {
-    height:200px;
+    height:150px;
     width:100%;
   }
   
-  .listing-card .video video {
+  .listing-card .video img {
     height:100%;
     width:100%;
     object-fit: cover;
-    border-radius: 0;
+    border-radius: 5px;
     box-sizing: border-box;
   }
   
@@ -1157,6 +1239,7 @@ h3 {
     color:#e5e5e5;
     text-align: left;
     margin-left: 15px;
+    margin-top: 20px;
   }
   
   h3 {
@@ -1170,4 +1253,5 @@ h3 {
   h1{
     font-size: 20px;
   }
+
  }
