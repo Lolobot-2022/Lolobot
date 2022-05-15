@@ -70,11 +70,11 @@ else {
 
 
 svg7.onclick = function (){
-if (vidDesktop.muted === false) {    
-  vidDesktop.muted = true;
+if (vidDesktop.muted === true) {    
+  vidDesktop.muted = false;
 }
 else {
-  vidDesktop.muted = false;
+  vidDesktop.muted = true;
     }
  }
   
