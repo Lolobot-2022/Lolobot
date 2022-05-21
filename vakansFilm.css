@@ -41,21 +41,22 @@ video {
   
   
  .container{
-  transform: rotate(90deg);
-  width: 150vw;
+  height: 90vh;
+  width: 100%;
+  background-color: aqua;
   
+ 
     }
 
 
     
-  video {
+  .content video {
   position: relative;
   object-fit: cover;
   filter: brightness(105%);
-  width: 90%;
-  height: 9vh;
   cursor: pointer;
-      
-}
+  transform: rotate(90deg);
+  
+  }
 
  }
