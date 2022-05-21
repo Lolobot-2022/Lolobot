@@ -8,12 +8,6 @@
   box-sizing: border-box;
 }
 
-@media (orientation: landscape) {
-  body {
-    flex-direction: row;
-  }
-}
-
 html,
 body {
   background-color: #000000;
@@ -27,7 +21,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  
 } 
 
 video {
@@ -37,19 +30,32 @@ video {
   width: 100vw;
   height: 100%;
   cursor: pointer;
-  
-  
-  
 } 
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+
 @media only screen and (max-width: 767px) {
-  @media (orientation: landscape) {
-    body {
-      flex-direction: row;
+  
+  
+ .container{
+  transform: rotate(90deg);
+  width: 150vw;
+  
     }
-  }
+
+
+    
+  video {
+  position: relative;
+  object-fit: cover;
+  filter: brightness(105%);
+  width: 90%;
+  height: 9vh;
+  cursor: pointer;
+      
 }
+
+ }

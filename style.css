@@ -983,8 +983,6 @@ h3 {
     width: 100%;
     text-align: center;
     align-items: center;
-    
-   
   }
 
   .grid-item1{
@@ -1113,7 +1111,9 @@ h3 {
     background-color: #ffffff00;
     color: #000000;
     text-transform: capitalize;
+    padding-bottom:10px;
   }
+
 
   .btn-info1{
     display: none;
