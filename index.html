@@ -33,9 +33,9 @@
 
     <title>Home-Haitian Movies</title>
 
-    <div>
+    <div id="myDiv" class="animate-square">
       <!--pour creer le menu avec un id appele head. Il se trouve dans la section head de la page-->
-      <div id="head" class="header">
+      <div id="head" class="header" onload="myFunction()">
         <img class="logo" src="./media/logo6.png" title="logo" />
         <nav>
           <ul class="destop-list">
@@ -46,7 +46,7 @@
               <li translate="no"><a id="bi5" class="a" href="./menu.html">Meni</a></li>
           </ul>
 
-          <ul class="mobile-list">
+          <ul class="mobile-list" onload="myFunction()">
             <a id="bi1" href="./index.html"><li translate="no"><i class="bi bi-house-door"></i> <br> Lakay</li></a>
             <a id="bi2" href="./Laught.html"><li translate="no"><i class="bi bi-emoji-laughing"></i> <br> Ri</li></a>
             <a id="bi3" href="./buy.html"><li translate="no"><i class="bi bi-plus-square-fill"></i></li></a>
@@ -56,13 +56,29 @@
         </nav>
       </div>
     </div>
+   
 
   </head>
 
-  <body>
+  <body onload="myFunction()">
     <!--La class grid-container contient tous les informations sur le film ou la serie,
    comme son nom, son resume, un bouton regarder et un autre pour plus d'infos -->
-  <div>
+
+   
+  <div id="squelettum">
+    <div class="squelet-desktop"></div>
+
+    <div class="squelet-mobile"></div>
+
+   <div class="squelet-square">
+    <div class="squelet-card"></div>
+   </div>
+   
+  </div>
+
+
+
+  <div id="myDiv" class="animate-square">
    <div class="grid-container">
       <div class="grid-item">
         <!-- <p translate="no" class="grantit" title="tit">VAKANS</p>  -->
@@ -208,6 +224,7 @@
     </div>
   </div>
 
+ <div id="myDiv" class="animate-square">
 
   <div class="after-vidprincipal">
     <h1 translate="no" class="titre">Fim ki fèk parèt</h1>
@@ -334,7 +351,7 @@
         </div>
       </div>
    </div>
- </div>
+  </div>
   <br>
   <br>
 
@@ -623,7 +640,7 @@
     <br />
     <br />
 
-
+</div>
 
     <script src="./assets/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/bootstrap.js" type="text/javascript"></script>
@@ -638,7 +655,8 @@
     
   </body>
 
-  <footer>
+  <footer onload="myFunction()">
+   <div id="myDiv" class="animate-square">
     <div class="foot-container">
       <div translate="no" class="foot-item">
         <a class="more" href="#">FAQ</a>
@@ -762,7 +780,8 @@
         <h3>Ed.2022 Haitian Movies</h3>
       </div>
     </div>
+  </div>
+
   </footer>
-   
-   
+  
 </html>
