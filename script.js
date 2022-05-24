@@ -109,8 +109,8 @@ btn.addEventListener('click', () => {
 //Pour le loader
 var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
+function myFunctionPage() {
+  myVar = setTimeout(showPage, 4000);
 }
 
 function showPage() {

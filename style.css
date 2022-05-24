@@ -790,12 +790,10 @@ h3 {
 
 #myDiv {
   display: none;
-  text-align: center;
 }
 
 #myDiv-grid {
   display: none;
-  text-align: center;
 }
 
 #myDiv-card {
@@ -824,14 +822,15 @@ h3 {
  }
 
 .squelet{
-  background-color: #ddd9d927;
+  background-color: #ddd9d909;
   display: flex;
   position: relative;
-  width: 60%;
+  width: 80%;
   height: 40%;
-  margin-top:5%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-top:10%;
+  /* margin-left: 50%;
+  transform: translateX(-50%); */
+  margin-left:70px;
 
   animation: fade ease 1s; 
   animation-duration: 2s;
@@ -852,25 +851,26 @@ h3 {
 
 .squelet-square{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   position: relative;
   overflow: hidden;
   column-gap: 20px;
   justify-items: stretch;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 50%;
 
    }
 
 .squelet-card{
   height: 150px;
-  background-color: #ddd9d927;
+  background-color: #ddd9d909;
   margin-right: 5px;
   position: relative;
   /* display: flex; */
   transition: 0.5s ease-in-out;
 
-  animation: fade ease 1s; 
+  animation: fadeOne ease 1s; 
   animation-duration: 2s;
   animation-fill-mode: forwards; 
   animation-iteration-count: infinite; 
@@ -885,6 +885,59 @@ h3 {
  } 
 
 }
+
+.squelet-button{
+    background-color: #ddd9d909;
+    display: flex;
+    position: relative;
+    width: 30%;
+    height: 10%;
+    /* margin-left: 50%;
+    transform: tra4slateX(-50%); */
+    margin-left:70px;
+  
+    animation: fadeTwo ease 1s; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite; 
+  } 
+  
+   @keyframes fadeTwo { 
+   0% { 
+   opacity: 0; 
+   } 
+   100% { 
+   opacity: 1; 
+   } 
+  
+  }
+
+  .squelet-button-one{
+    background-color: #ddd9d909;
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 7%;
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
+    margin-left:70px;
+  
+    animation: fadeThree ease 1s; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite; 
+  } 
+  
+   @keyframes fadeThree { 
+   0% { 
+   opacity: 0; 
+   } 
+   100% { 
+   opacity: 1; 
+   } 
+  
+  }
+
   
 
 
@@ -1442,12 +1495,12 @@ h3 {
 
 
    .squelet{
-    background-color: #ddd9d927;
     display: flex;
+    background-color: #ddd9d909;
     position: relative;
-    width: 60%;
-    height: 40%;
-    margin-top:10%;
+    width: 80%;
+    height: 55%;
+    margin-top:10%; 
     margin-left: 50%;
     transform: translateX(-50%);
   
@@ -1467,21 +1520,50 @@ h3 {
   
   }
 
+  .squelet-button{
+    display: flex;
+    background-color: #ddd9d909;
+    position: relative;
+    width: 20%;
+    height: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  
+    animation: fadeOne ease 1s; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite; 
+  } 
+  
+   @keyframes fadeOne { 
+   0% { 
+   opacity: 0; 
+   } 
+   100% { 
+   opacity: 1; 
+   } 
+  
+  }
+
+  .squelet-button-one{
+    display: none;
+  }
+
+
   .squelet-square{
     display: grid;
-    grid-template: repeat(4, auto)/repeat(2,1fr);
+    grid-template: repeat(1, auto)/repeat(4,1fr);
     position: relative;
     overflow: hidden;
-    gap: 30px;
+    gap: 5px;
     justify-items: stretch;
+    margin-top: 15%;
    
-    
-  
      }
   
   .squelet-card{
     height: 150px;
-    background-color: #ddd9d927;
+    background-color: #ddd9d909;
     position: relative;
     /* display: flex; */
     transition: 0.5s ease-in-out;
