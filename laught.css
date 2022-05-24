@@ -17,6 +17,94 @@
   height: 55px;
 }
 
+
+#wait{
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  z-index: 1;
+  margin: 0px 0 0 -70px;
+  
+  animation: fade ease 1s; 
+  animation-duration: 2s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite; 
+} 
+
+ @keyframes fade { 
+ 0% { 
+ opacity: 0; 
+ } 
+ 100% { 
+ opacity: 1; 
+ } 
+} 
+
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  margin: -76px 0 0 -76px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #db3434;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  display: none;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(150%);
+  cursor: pointer;
+  border-radius: 0%;
+  border: none;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+  box-shadow: 0px 0px 8px rgb(218, 218, 218);
+}
+
+
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+
 /*Pour pouvoir changer le background du menu en scrollant, dans lequel on injecte du javascript*/
 
 .scrolled {
@@ -135,18 +223,6 @@ body {
   padding: 0;
 }
 
-.vid {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(150%);
-  cursor: pointer;
-  border-radius: 0%;
-  border: none;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
-  box-shadow: 0px 0px 8px rgb(218, 218, 218);
-}
 
 .mobile-list {
   display: none;
@@ -193,15 +269,24 @@ body {
     display: none;
   }
 
-  .vid {
-    position: absolute;
+  .animate-bottom {
+    position: relative;
+    display: none;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(150%);
     cursor: pointer;
-    border-radius: 5%;
+    border-radius: 0%;
     border: none;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+    box-shadow: 0px 0px 8px rgb(218, 218, 218);
   }
+  
 
   video{
     object-fit: inherit;
