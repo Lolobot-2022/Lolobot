@@ -755,36 +755,135 @@ h3 {
 .animate-square {
   position: relative;
   display: none;
-  -webkit-animation-name: animatebottom;
+  -webkit-animation-name: animatesquare;
   -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
+  animation-name: animatesquare;
   animation-duration: 1s;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(150%);
   cursor: pointer;
   border-radius: 0%;
   border: none;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
-  box-shadow: 0px 0px 8px rgb(218, 218, 218);
 }
 
 
 
 @-webkit-keyframes animatesquare {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 
+    } 
 }
 
 @keyframes animatesquare { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+  0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 
+    } 
 }
 
 #myDiv {
   display: none;
   text-align: center;
+}
+
+#myDiv-grid {
+  display: none;
+  text-align: center;
+}
+
+#myDiv-card {
+  display: none;
+  text-align: center;
+}
+
+#myDiv-footer {
+  display: none;
+  text-align: center;
+}
+
+#squelettum {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  border-radius: 0%;
+  border: none;
+  background-color: #141414;
+  cursor: pointer;
+
+ }
+
+.squelet{
+  background-color: #ddd9d927;
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 40%;
+  margin-top:5%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  animation: fade ease 1s; 
+  animation-duration: 2s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite; 
+} 
+
+ @keyframes fade { 
+ 0% { 
+ opacity: 0; 
+ } 
+ 100% { 
+ opacity: 1; 
+ } 
+
+}
+
+
+.squelet-square{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
+  overflow: hidden;
+  column-gap: 20px;
+  justify-items: stretch;
+  margin-left: 5%;
+  margin-right: 5%;
+
+   }
+
+.squelet-card{
+  height: 150px;
+  background-color: #ddd9d927;
+  margin-right: 5px;
+  position: relative;
+  /* display: flex; */
+  transition: 0.5s ease-in-out;
+
+  animation: fade ease 1s; 
+  animation-duration: 2s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite; 
+} 
+
+ @keyframes fadeOne { 
+ 0% { 
+ opacity: 0; 
+ } 
+ 100% { 
+ opacity: 1; 
+ } 
+
 }
   
 
@@ -1329,6 +1428,80 @@ h3 {
     font-size: 20px;
   }
 
+  #squelettum {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: none;
+    background-color: #141414;
+    
+   }
+
+
+   .squelet{
+    background-color: #ddd9d927;
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 40%;
+    margin-top:10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
   
+    animation: fade ease 1s; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite; 
+  } 
+  
+   @keyframes fade { 
+   0% { 
+   opacity: 0; 
+   } 
+   100% { 
+   opacity: 1; 
+   } 
+  
+  }
+
+  .squelet-square{
+    display: grid;
+    grid-template: repeat(4, auto)/repeat(2,1fr);
+    position: relative;
+    overflow: hidden;
+    gap: 30px;
+    justify-items: stretch;
+   
+    
+  
+     }
+  
+  .squelet-card{
+    height: 150px;
+    background-color: #ddd9d927;
+    position: relative;
+    /* display: flex; */
+    transition: 0.5s ease-in-out;
+    
+  
+    animation: fade ease 1s; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite; 
+  } 
+  
+   @keyframes fadeOne { 
+   0% { 
+   opacity: 0; 
+   } 
+   100% { 
+   opacity: 1; 
+   } 
+  
+  }
+    
 
  }

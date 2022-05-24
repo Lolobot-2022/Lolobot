@@ -106,7 +106,21 @@ btn.addEventListener('click', () => {
 
 
 
+//Pour le loader
+var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("squelettum").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("myDiv-grid").style.display = "block";
+  document.getElementById("myDiv-card").style.display = "block";
+  document.getElementById("myDiv-footer").style.display = "block";
+
+}
 
 
 
