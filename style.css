@@ -822,7 +822,7 @@ h3 {
  }
 
 .squelet{
-  background-color: #ddd9d909;
+  background-color: #ddd9d926;
   display: flex;
   position: relative;
   width: 80%;
@@ -864,7 +864,7 @@ h3 {
 
 .squelet-card{
   height: 150px;
-  background-color: #ddd9d909;
+  background-color: #ddd9d926;
   margin-right: 5px;
   position: relative;
   /* display: flex; */
@@ -884,10 +884,10 @@ h3 {
  opacity: 1; 
  } 
 
-}
+ }
 
-.squelet-button{
-    background-color: #ddd9d909;
+ .squelet-button{
+    background-color: #ddd9d926;
     display: flex;
     position: relative;
     width: 30%;
@@ -913,7 +913,7 @@ h3 {
   }
 
   .squelet-button-one{
-    background-color: #ddd9d909;
+    background-color: #ddd9d926;
     display: block;
     position: relative;
     width: 20%;
@@ -1496,7 +1496,7 @@ h3 {
 
    .squelet{
     display: flex;
-    background-color: #ddd9d909;
+    background-color: #ddd9d926;
     position: relative;
     width: 80%;
     height: 55%;
@@ -1522,7 +1522,7 @@ h3 {
 
   .squelet-button{
     display: flex;
-    background-color: #ddd9d909;
+    background-color: #ddd9d926;
     position: relative;
     width: 20%;
     height: 5%;
@@ -1563,7 +1563,7 @@ h3 {
   
   .squelet-card{
     height: 150px;
-    background-color: #ddd9d909;
+    background-color: #ddd9d926;
     position: relative;
     /* display: flex; */
     transition: 0.5s ease-in-out;
