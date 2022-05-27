@@ -954,6 +954,7 @@ h3 {
   
   .scrolled{
     box-shadow: 0px 0px 8px rgb(255, 0, 0);
+    background-color: #141414;
   }
 
   #head{
@@ -971,20 +972,19 @@ h3 {
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
     cursor: pointer;
     object-fit: cover;
     object-position: 50% 50%;
     filter: brightness(120%);
     box-shadow: none;
-    height: 610px;
+    height: 450px;
   }
 
   .imgCont{
     display: block;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
     box-shadow: 0px 55px 50px rgb(0, 0, 0);
-    height: 610px;
+    height: 450px;
   }
 
   .shadow{
@@ -994,7 +994,7 @@ h3 {
     rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.793), 
     rgb(0, 0, 0), rgb(0, 0, 0));
     box-shadow: 0px 55px 50px rgb(0, 0, 0);
-    height: 615px;
+    height: 455px;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -1067,10 +1067,9 @@ h3 {
 
   
   .mobile-list{
-    background-color: #000000; 
+    background-color: #141414;
     box-shadow: 0px 0px 8px rgb(218, 218, 218);
-    filter: brightness(120%);
-    color:#959393;
+    filter: brightness(100%);
     position: fixed;
     bottom: 0;
     left:0;
@@ -1084,7 +1083,7 @@ h3 {
     font-weight: bold;
     width: 100%;
     height: auto;
-    padding: 15px;
+    padding: 5px;
     cursor: pointer;
     margin: 0px;
     border-radius: 10px 10px 0 0;
@@ -1104,21 +1103,21 @@ h3 {
  }
 
  #bi2{
-  color:#959393;
+  color:#ffffff;
   text-decoration: none;
  }
 
   #bi3{
-    color:#959393;
+    color:#ffffff;
     text-decoration: none;
    }
 
   #bi4{
-    color:#959393;
+    color:#ffffff;
     text-decoration: none;
    }
    #bi5{
-    color:#959393;
+    color:#ffffff;
     text-decoration: none;
    }
   
@@ -1144,9 +1143,9 @@ h3 {
     row-gap: 5px;
     height: 130px;
     width: 70%;
-    top:370px;
+    top:220px;
     justify-content: center;
-    margin: auto;
+    margin-left: 50% auto;
     opacity: 1.0;
   } 
 
@@ -1393,7 +1392,7 @@ h3 {
  .svg8 {
   height: 25px; 
   width: 80px;
-  color: red;
+  color: rgb(255, 255, 255);
  }
 
  .btn-svg8-unmute{
