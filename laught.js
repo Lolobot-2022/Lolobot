@@ -16,7 +16,7 @@ function myFunction() {
 //Pour le loader
 var myVar;
 
-function myFunction() {
+function myFunctionPage() {
   myVar = setTimeout(showPage, 3000);
 }
 
