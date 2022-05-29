@@ -581,11 +581,10 @@ h3 {
   right: 20px;
   bottom: 20px;
   cursor: pointer;
-  border: #ff0000 solid 2px;
-  box-shadow: 0px 5px 28px rgb(255, 0, 0), 0px 0px 18px rgb(218, 218, 218);
   z-index: 3;
   filter: brightness(120%);
-  
+  border: #ff0000 solid 2px;
+  box-shadow: 0px 5px 28px rgb(255, 0, 0);
   animation: fade ease 5s; 
   animation-duration: 5s;
   animation-fill-mode: forwards; 
@@ -596,11 +595,12 @@ h3 {
  0% { 
  opacity: 0; 
  } 
+ 
+
  100% { 
  opacity: 1; 
  } 
 } 
-
 
 
 /* .after-vidPrincipale{
@@ -614,92 +614,15 @@ h3 {
 } */
 
 .card-container {
-  display: grid;
-  /* flex-direction: row; */
-  grid-template-columns: repeat(6, 220px);
-  margin-left: 70px;
-  position: relative;
-  overflow: hidden;
-  column-gap: 20px;
-  justify-items: stretch;
-  filter: brightness(120%);
+  display: none;
 }
 
-.listing-card {
-  height: 150px;
-  background-color: #000000;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-right: 5px;
-  position: relative;
-  /* display: flex; */
-  transition: 0.5s ease-in-out;
-  width: 220px;
-  height: 150px;
-}
-
-
-.listing-card .video {
-  height: 120px;
-}
-
-.listing-card .video video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.listing-card .video video:hover {
-  width: 100%;
-  height: 150px;
-  transition: 1.1s ease-in-out 0.5s;
-}
-
-
-.listing-card .details {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.listing-card .btn-default {
-  background: linear-gradient(
-    to right,
-    black,
-    rgb(23, 16, 16),
-    rgb(147, 53, 53)
-  );
-  display: inline-block;
-  position: static;
-  color: #fff;
-  width: 70px;
-  height: 30px;
-  border-radius: 0 0 5px 0;
-  text-decoration: none;
-  margin-left: 150px;
-  text-align: right;
-}
 
 
 .titre {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 25px;
-  color:#e5e5e5;
-  text-align: left;
-  /* text-shadow: 1px 1px 2px red, 0 0 1em rgb(238, 255, 0), 0 0 0.2em rgb(221, 255, 0);  */
-  margin-left: 70px;
+  display: none;
 }
 
-h3 {
-  color: rgb(113, 255, 12);
-  font-weight: bold;
-  font-size: medium;
-  padding-left: 5px;
-  padding-right: 5px;
-}
 
 
 .mobile-list{
@@ -938,7 +861,9 @@ h3 {
   
   }
 
-  
+  .card-container-doc{
+    display: none;
+  }
 
 
 
@@ -1068,8 +993,7 @@ h3 {
   
   .mobile-list{
     background-color: #141414;
-    box-shadow: 0px 0px 8px rgb(218, 218, 218);
-    filter: brightness(100%);
+    filter: brightness(120%);
     position: fixed;
     bottom: 0;
     left:0;
@@ -1086,7 +1010,6 @@ h3 {
     padding: 5px;
     cursor: pointer;
     margin: 0px;
-    border-radius: 10px 10px 0 0;
   }
 
   .mobile-list i{
@@ -1218,7 +1141,7 @@ h3 {
   } 
 
   ::marker{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 10px;
 
   }
@@ -1235,15 +1158,21 @@ h3 {
     cursor: pointer;
     font-style: normal;
     font-size: 20px;
+    padding-left: 5px;   
   }
 
   .mute{
     display: block;
-    font-size: 12px;
-    text-align: center;
-    align-items: center;
     color: white;
     margin: 5px 40px 5px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .micro{
+    display: block;
+    font-size: 10px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: capitalize;
   }
@@ -1260,8 +1189,7 @@ h3 {
     display: block;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 10px;
-    padding-bottom: 5px;
+    font-size: 15px;
   }
 
   .info-mobile{
@@ -1275,6 +1203,15 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: capitalize;
   }
+
+  .info{
+    display: block;
+    font-size: 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+  }
+
 
   .info-plus{
     text-decoration: none;
@@ -1312,9 +1249,10 @@ h3 {
   #btn {
     border: solid 2px white;
     cursor: pointer;
-    width: 85px;
+    width: 100px;
     height: 30px;
     padding-bottom: 5px;
+    filter: brightness(120%);
     
   }
 
@@ -1354,46 +1292,53 @@ h3 {
   }
 
 
- .btn-svg8{
+ #btn-svg8{
   display: flex;
-  height: 40px;
-  width: 40px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  color: #ff0000;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight:bolder;
+  text-align: center;
   position: fixed;
-  right: 20px;
-  bottom: 100px;
+  border-radius: 50%;
+  right: 10px; 
+  bottom: 60px;
   cursor: pointer;
-  box-shadow: 0px 0px 8px rgb(218, 218, 218);
   overflow: hidden;
   z-index: 3;
   
-  animation: fade ease 5s; 
-  animation-duration: 5s;
+  animation: glissement ease 5s; 
+  animation-duration: 3s;
   animation-fill-mode: forwards; 
   animation-iteration-count: infinite; 
 } 
 
- @keyframes fade { 
- 0% { 
- opacity: 0; 
- } 
- 100% { 
- opacity: 1; 
- } 
+ @keyframes glissement { 
+   from{
+    bottom: 60px;
+    color: #ff0000;
+    background-color: #000000c3;
+    border-radius: 50%;
+    border: #ffffff 2px solid;
+
+  }
+
+  to{
+    bottom:120px;
+    background-color: #fd0505aa;
+    color: #ffffff;
+    border-radius: 50%;
+    border: #000000 2px solid;
+  }
 } 
+
+
 
 #svg7{
   display: none;
 }
 
- .svg8 {
-  height: 25px; 
-  width: 80px;
-  color: rgb(255, 255, 255);
- }
 
  .btn-svg8-unmute{
    display: none;
@@ -1409,11 +1354,12 @@ h3 {
     top: 0px;
     
   }
+
   
 
   .card-container {
     display: grid;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-right: 5px;
     grid-template: repeat(2, auto)/ repeat(4,auto);
     position: relative;
@@ -1425,13 +1371,42 @@ h3 {
     box-shadow: 0px 40px 35px rgb(0, 0, 0);
   }
 
+/* Pour une autre card qui regroupera les documentaires (tous les -doc) */
+
+  .card-container-doc {
+    display: grid;
+    grid-template: repeat(1, auto)/ repeat(3,auto);
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;
+    column-gap: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    filter: brightness(120%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    box-shadow: 0px 40px 35px rgb(0, 0, 0);
+  }
+
   .listing-card {
     background-color: rgb(0, 0, 0);
     cursor: pointer;
     border-radius: 5px;
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 160px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 55px 50px rgb(0, 0, 0);
+    padding-top: 15px;
+
+  }
+
+  .listing-card-doc {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: 250px;
     transition: 0.5s ease-in-out;
     box-shadow: 0px 55px 50px rgb(0, 0, 0);
     padding-top: 15px;
@@ -1439,8 +1414,15 @@ h3 {
   }
   
   .listing-card .video {
-    height:150px;
+    height:140px;
     width:100%;
+    filter: brightness(120%);
+  }
+
+  .listing-card-doc .video {
+    height:230px;
+    width:100%;
+    filter: brightness(120%);
   }
   
   .listing-card .video img { 
@@ -1452,7 +1434,19 @@ h3 {
   }
 
   .listing-card .video img:hover{
-  filter: brightness(130%);
+  transform:translateY(-5%);
+  transition: 0.8 ease-in-out;
+  }
+
+  .listing-card-doc .video img { 
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .listing-card-doc .video img:hover{
   transform:translateY(-5%);
   transition: 0.8 ease-in-out;
   }
@@ -1460,6 +1454,7 @@ h3 {
 
   
   .titre {
+    display: flex;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     font-size: 25px;
@@ -1471,17 +1466,6 @@ h3 {
     box-shadow: 0px 40px 35px rgb(0, 0, 0);
   }
   
-  h3 {
-    color: rgb(103, 57, 57);
-    font-weight: bold;
-    font-size:13px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    align-items: center;
-    margin-top:5px;
-  }
-  h1{
-    font-size: 20px;
-  }
 
   #squelettum {
     position: absolute;
@@ -1586,6 +1570,6 @@ h3 {
    } 
   
   }
-    
-
+  
+ 
  }

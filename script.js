@@ -1,10 +1,10 @@
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction(),myFunctionOne()};
 const vid = document.getElementById("img"); 
 const vidDesktop = document.getElementById("img-desktop"); 
 const video = document.getElementById("vid1popup"); 
 let myvideo = document.querySelectorAll(".videoplay");
-const btn = document.querySelector('.btn-svg8');
+const btn = document.getElementById("btn-svg8");
 
 
 
@@ -23,6 +23,18 @@ function myFunction() {
     document.getElementById("head").className = "";
   }
 }
+
+
+
+
+function myFunctionOne() {
+  if (document.documentElement.scrollTop > 150) {
+    document.getElementById("btn-svg8").style.display = "block";
+  } else {
+    document.getElementById("btn-svg8").style.display = "none";
+  }
+}
+
 
 
 
