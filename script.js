@@ -31,9 +31,9 @@ function myFunctionOne() {
 //pour le background du menu en scrollant
 function myFunction() {
   if (document.documentElement.scrollTop > 50) {
-    document.getElementById("head").className = "scrolled";
+    document.getElementById("head-desktop").className = "scrolled";
   } else {
-    document.getElementById("head").className = "";
+    document.getElementById("head-desktop").className = "";
   }
 }
 
@@ -128,9 +128,11 @@ function myFunctionPage() {
 
 function showPage() {
   document.getElementById("squelettum").style.display = "none";
-  document.getElementById("myDiv").style.display = "flex";
+  document.getElementById("myDiv-desktop").style.display = "flex";
+  document.getElementById("myDiv-mobile").style.display = "flex";
   document.getElementById("myDiv-grid").style.display = "grid";
   document.getElementById("myDiv-card").style.display = "grid";
+  document.getElementById("myDiv-btn").style.display = "flex";
   document.getElementById("myDiv-footer").style.display = "grid";
 
 }
