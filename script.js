@@ -1,5 +1,5 @@
 
-window.onscroll = function() {myFunction(),myFunctionOne()};
+window.onscroll = function() {myFunctionOne(),myFunction()};
 const vid = document.getElementById("img"); 
 const vidDesktop = document.getElementById("img-desktop"); 
 const video = document.getElementById("vid1popup"); 
@@ -15,6 +15,19 @@ setTimeout(function() {
 
 
 
+
+
+function myFunctionOne() {
+  if (document.documentElement.scrollTop > 150) {
+    document.getElementById("btn-svg8").style.display = "flex";
+  } else {
+    document.getElementById("btn-svg8").style.display = "none";
+  }
+}
+
+
+
+
 //pour le background du menu en scrollant
 function myFunction() {
   if (document.documentElement.scrollTop > 50) {
@@ -23,18 +36,6 @@ function myFunction() {
     document.getElementById("head").className = "";
   }
 }
-
-
-
-
-function myFunctionOne() {
-  if (document.documentElement.scrollTop > 150) {
-    document.getElementById("btn-svg8").style.display = "block";
-  } else {
-    document.getElementById("btn-svg8").style.display = "none";
-  }
-}
-
 
 
 
@@ -127,10 +128,10 @@ function myFunctionPage() {
 
 function showPage() {
   document.getElementById("squelettum").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-  document.getElementById("myDiv-grid").style.display = "block";
-  document.getElementById("myDiv-card").style.display = "block";
-  document.getElementById("myDiv-footer").style.display = "block";
+  document.getElementById("myDiv").style.display = "flex";
+  document.getElementById("myDiv-grid").style.display = "grid";
+  document.getElementById("myDiv-card").style.display = "grid";
+  document.getElementById("myDiv-footer").style.display = "grid";
 
 }
 

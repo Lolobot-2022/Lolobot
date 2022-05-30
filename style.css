@@ -1019,7 +1019,6 @@ h3 {
   #bi1{
    color:rgb(255, 0, 0);
    text-decoration: none;
-   filter: none;
    border-radius: 0;
    padding: 0;
    box-shadow: none;
@@ -1321,7 +1320,6 @@ h3 {
     background-color: #000000c3;
     border-radius: 50%;
     border: #ffffff 2px solid;
-
   }
 
   to{
